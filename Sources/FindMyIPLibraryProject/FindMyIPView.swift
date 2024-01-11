@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FindMyIPView: View {
     
     @StateObject var getIPViewModel:GetIPViewModel = GetIPViewModel(networking: NetworkManager())
     
@@ -195,5 +195,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    FindMyIPView()
 }
