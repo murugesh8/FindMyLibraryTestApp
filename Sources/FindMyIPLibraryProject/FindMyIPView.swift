@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FindMyIPView: View {
+public struct FindMyIPView: View {
     
     @StateObject var getIPViewModel:GetIPViewModel = GetIPViewModel(networking: NetworkManager())
     
@@ -15,7 +15,11 @@ struct FindMyIPView: View {
 
     @StateObject var networkMonitor: NetworkMonitor = NetworkMonitor()
 
-    var body: some View {
+    public init(){
+        
+    }
+    
+    public var body: some View {
         NavigationView {
             
             if !showNetworkView{
